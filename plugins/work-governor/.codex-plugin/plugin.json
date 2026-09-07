@@ -1,6 +1,6 @@
 {
   "name": "work-governor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An instruction-based Codex workflow for clarifying tasks, selecting available skills, and checking results.",
   "author": {
     "name": "Kyrylo"

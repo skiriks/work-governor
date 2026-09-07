@@ -4,7 +4,7 @@ An instruction-based plugin for Codex. Describe the result you want; Work Govern
 
 Created by Kyrylo as a personal project with AI assistance, for use in his own work.
 
-**Release status:** public preview. Anonymous repository access and download of all 27 package files were verified on 7 September 2026. Installation in an independent Codex environment and the complete fresh Desktop workflow have not yet been verified. See [verification](docs/VERIFICATION.md).
+**Release status:** public preview. Anonymous download, installation from GitHub in isolated Codex CLI state, and discovery of all four bundled skills were verified on 7 September 2026. These installation checks cover 0.1.0; the 0.1.1 update check is pending. The complete fresh Desktop workflow has not yet been verified. See [verification](docs/VERIFICATION.md).
 
 ## What you install
 

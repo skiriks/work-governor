@@ -1,19 +1,25 @@
 # Verification record
 
-Date: 7 September 2026. Package: `work-governor` version `0.1.0`. Marketplace: `skiriks-work-governor`.
+Date: 7 September 2026. Package: `work-governor` version `0.1.1`. Marketplace: `skiriks-work-governor`.
 
-This is a public preview at [skiriks/work-governor](https://github.com/skiriks/work-governor). Repository publication and anonymous package download were verified. Installation in an independent Codex environment remains unperformed.
+This is a public preview at [skiriks/work-governor](https://github.com/skiriks/work-governor). Publication, anonymous download, installation into isolated Codex CLI state, and discovery of the four installed skills were verified. A full Desktop task remains unperformed.
 
-## Current candidate checks
+Version 0.1.1 carries the current personal-source changes to completion checks, blocked-stop explanations, and transferable handoffs. It retains the public marketplace identity, English metadata, the same four skills, and the same license notices. The source and its current personal cache matched when this update was selected. Installation and discovery results below currently concern 0.1.0; the 0.1.1 update check is pending.
+
+## Recorded checks
 
 | Layer | Status | Evidence and limit |
 | --- | --- | --- |
 | Selected package and links | Passed | The focused package checker passed: 27 selected files, 16 runtime files, four skills, 23 local links. Eight YAML documents also parsed with Ruby Psych. These checks do not substitute for the official schema validator. |
-| Copied-package instruction consumer | Draft check passed; file workflow blocked | A controlled consumer read the copied Governor, bundled agent-writing skill and its reference, and the synthetic brief. It returned concise instructions preserving the brief's boundaries. Host approval review rejected creation of the demo file as outside the explicitly recognized publication scope. No file was created; the read-only draft was checked instead. |
-| Missing-capability responses | Passed in two controlled samples | With the declared optional helper absent, the consumer used a direct method and checked `12.35`. With essential private-sheet access absent, it gave no invented row count and requested readable data. No installation or account access occurred. |
+| Copied-package instruction consumer (0.1.0) | Draft check passed; file workflow blocked | A controlled consumer read the copied Governor, bundled agent-writing skill and its reference, and the synthetic brief. It returned concise instructions preserving the brief's boundaries. Host approval review rejected creation of the demo file as outside the explicitly recognized publication scope. No file was created; the read-only draft was checked instead. |
+| Missing-capability responses (0.1.0) | Passed in two controlled samples | With the declared optional helper absent, the consumer used a direct method and checked `12.35`. With essential private-sheet access absent, it gave no invented row count and requested readable data. No installation or account access occurred. |
+| Completion and missing-data consumer samples (0.1.1) | Mixed | A read-only consumer independently checked a reported arithmetic result and returned `12.35`. With private-sheet access absent, it gave no invented count and offered access/export routes with a resume step, but omitted the instruction to explicitly recommend one route. These are direct instruction-consumer samples, not installed Desktop runs. |
+| Handoff consumer sample (0.1.1) | Selected constraints preserved | A synthetic continuation retained plain-language Governor delegation, pending installation/Desktop checks, a deferred recording, visible source/input pointers, reported authority limits, and receiving-task ownership. No task was created or transferred. |
 | Official authoring validators | Not run successfully | The local Python environments lack PyYAML; an older cached adapter is also unavailable. No dependency was installed. The official validators remain a separate uncompleted check. |
 | Public repository and anonymous download | Passed | The public GitHub repository was created with fresh history after author approval. An unauthenticated HTTP download of initial commit `ddfe44c07ba92e603ca37d123ee40ace41106826` contained exactly the 27 approved files, all byte-identical to the reviewed package. Publication-status documentation was then updated. |
-| Public remote installation | Not performed | Anonymous download does not establish that Codex installed and discovered the plugin in an independent environment. |
+| Public GitHub installation in isolated CLI state (0.1.0) | Passed | Codex CLI 0.153.4 on macOS added `skiriks/work-governor`, installed `work-governor@skiriks-work-governor` version `0.1.0`, and listed it as the only installed plugin, enabled. All 19 installed plugin files matched the public package, including both licenses and attribution. |
+| Fresh app-server skill discovery (0.1.0) | Passed | A new process discovered four enabled namespaced skills from the installed public plugin with no discovery errors. Its only other skills were six built-in system skills supplied by Codex. |
+| Model turn in isolated CLI state | Not performed | The isolated state has no authenticated Codex account. No model request, copied credential, or login was used in these installation/discovery checks. |
 | Fresh Desktop discovery and `@` invocation | Not performed | No independent Desktop profile or second machine was used. |
 | Native card rendering and answer handling | Not performed for this candidate | Host-dependent behavior; a tool acknowledgement is not a submitted answer or proof of rendering. |
 
@@ -25,10 +31,16 @@ On 7 September, the 16 original runtime files were compared again and all matche
 
 Earlier Desktop question-card observations used earlier configurations. They are not current public-installation acceptance evidence, and old restrictions must not be treated as current host guarantees.
 
-The current controlled consumers received a copied package and a declared four-skill catalog. They were instructed to use only those files and synthetic data, and their observed reads followed that boundary. They still ran under the author's host and approval system. This is not a fresh account, an independently installed environment, or a sandbox security assessment.
+The earlier controlled consumers received a copied package and a declared four-skill catalog. They were instructed to use only those files and synthetic data, and their observed reads followed that boundary. They still ran under the author's host and approval system. Those consumer samples are separate from the later isolated installation/discovery check and do not establish Desktop behavior.
+
+## Isolation used for the installation check
+
+The test used a temporary Codex state directory, an empty project, no supplied credentials, and Git global/system configuration disabled for the test processes. A separate state directory alone still exposed the author's personal marketplace. Before installation, an additional macOS sandbox denied access to the personal Codex, agent configuration, and plugin source directories; the fresh catalog then contained zero marketplaces. Only the public GitHub marketplace was added.
+
+The app-server confirmed the temporary state root, returned the four public plugin skills plus Codex's built-in system skills, and reported no authenticated account. The original configuration and marketplace file were checked for preservation. The personal plugin was updated independently during this work; the test did not write to it. This verifies installation without relying on the author's personal plugins or account connectors, on the same machine and Codex binary. It is not a separate computer, account-based model run, or security assessment of Codex isolation.
 
 ## Release acceptance still required
 
-Use [installation](INSTALL.md) and [the offline demo](../examples/OFFLINE-DEMO.md) on a separate Codex environment without the author's configuration, account connectors, installed skill collection, or task history. Confirm the source marketplace, plugin version, four visible skills, actual `@` selection, bundled helper use, artifact checks, and missing-capability handling.
+The remaining acceptance is a real authenticated task using [installation](INSTALL.md) and [the offline demo](../examples/OFFLINE-DEMO.md). Confirm the marketplace and plugin version, four visible skills, actual Desktop `@` selection, bundled helper use, artifact checks, and missing-capability handling. Prefer a separate user environment; if the existing Desktop profile is used, record that limitation and the actual skills/tools used.
 
-Until that run is recorded, describe this as a public preview with local package checks and a documented installation path. Do not claim a verified public install, general reliability, support for every host, or time savings.
+Until that run is recorded, describe this as a public preview with verified isolated CLI installation and skill discovery. Do not claim a completed Desktop workflow, general reliability, support for every host, or time savings.

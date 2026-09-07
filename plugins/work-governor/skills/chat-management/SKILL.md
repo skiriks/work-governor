@@ -48,13 +48,18 @@ Explain the observed difficulty and what a fresh task would improve. Prepare the
 Write the actual transferable brief in the chat; saying “handoff prepared” or listing what you will include is not a handoff. Make the destination able to take its first safe action without asking the user to reconstruct history. Include the following as relevant, using “not applicable” or “unknown” instead of invented detail:
 
 - the goal, desired result, completion criteria, scope and exclusions;
-- the approved plan and the exact remaining step, settled decisions and assumptions;
+- the working method and how to invoke it in the destination, following the delegation rule below;
+- the plan's actual status (proposed, approved for execution, or plan-only), exact remaining step, settled decisions and assumptions; for a child task, distinguish the approved parent strategy from approval of the child's own implementation;
 - completed work and current files/artifacts, including uncommitted changes and relevant branch/worktree/base/final revision;
 - canonical documentation and source pointers, with frozen or immutable boundaries;
 - checks and review results labeled fresh, historical, stale, failed or unrun, with decisive evidence and failures;
 - permissions actually granted in this conversation and those still missing, plus current host/mode constraints;
 - blockers, unresolved decisions and pending cards with their original questions/options, actual answers and custom constraints;
-- task ownership, dependencies, integration contract and the exact next action to take.
+- task ownership, dependencies, integration contract, who verifies the overall result, and the exact next action to take. For a single-task continuation, assign remaining execution and final verification to the receiving task; for coordinated work, preserve the named owners and identify any unsettled ownership explicitly.
+
+When Work Governor governs the source work and the user requests its continuation or a child-task brief, open the transferable brief with an actionable plain-language request, such as “Use Work Governor for this task.” Preserve the relevant working rules in the brief: reuse settled decisions, continue authorized execution through checks, and explain a real stop with the needed user action, options and resumption. This request survives ordinary text copying; do not depend on a rendered plugin chip, personal marketplace identity or remembered cache path. If the destination lacks Governor, the brief must still support its first safe action without claiming the skill loaded. Do not add full Governor when the source was ungoverned or the user opted out; describing Governor as the product being developed is not delegation.
+
+Keep every unfinished required acceptance check in the remaining plan, even after a release artifact or upload exists. Identify separately deferred or excluded paths and their decision status. Write critical file paths and source task/document URLs visibly as literal text, alongside optional clickable labels, so copying without link targets retains the pointers. A handoff's historical permissions remain reported context; only the current user's request and destination host rules establish executable authority.
 
 Inspect decisive current evidence before sending a handoff. A stale `ready` label or quoted historical approval is not current verification or authority. Use the existing [project-continuity method](../work-governor/references/project-continuity.md) when reconstructing project state from canonical documents; do not create competing status documents.
 
