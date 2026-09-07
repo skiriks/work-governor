@@ -2,7 +2,7 @@
 
 Date: 7 September 2026. Package: `work-governor` version `0.1.1`. Marketplace: `skiriks-work-governor`.
 
-This is a public preview at [skiriks/work-governor](https://github.com/skiriks/work-governor). Publication, anonymous download, installation into isolated Codex CLI state, and discovery of the four installed skills were verified. A full Desktop task remains unperformed.
+This is a public preview at [skiriks/work-governor](https://github.com/skiriks/work-governor). Publication, anonymous download, installation into isolated Codex CLI state, and discovery of the four installed skills were verified. A fresh native Codex task on the author's existing Desktop profile completed the bounded file workflow and a missing-helper check. Actual Desktop picker selection remains unobserved.
 
 Version 0.1.1 carries the current personal-source changes to completion checks, blocked-stop explanations, and transferable handoffs. It retains the public marketplace identity, English metadata, the same four skills, and the same license notices. The source and its current personal cache matched when this update was selected. Both a fresh public installation of 0.1.1 and an update from 0.1.0 passed in isolated CLI state.
 
@@ -20,7 +20,10 @@ Version 0.1.1 carries the current personal-source changes to completion checks, 
 | Public GitHub installation and update (0.1.1) | Passed | Codex CLI 0.153.4 on macOS added `skiriks/work-governor` in fresh state, installed `work-governor@skiriks-work-governor` version `0.1.1`, and listed it as the only installed plugin, enabled. A separate update from the tested 0.1.0 installation also passed. All 19 installed files matched the public package in both paths, including both licenses and attribution. |
 | Fresh app-server skill discovery (0.1.1) | Passed | A new process discovered four enabled namespaced skills from the installed 0.1.1 public plugin with no discovery errors. Its only other skills were six built-in system skills supplied by Codex. |
 | Model turn in isolated CLI state | Not performed | The isolated state has no authenticated Codex account. No model request, copied credential, or login was used in these installation/discovery checks. |
-| Fresh Desktop discovery and `@` invocation | Not performed | No independent Desktop profile or second machine was used. |
+| Native Codex task with installed public package (0.1.1) | Passed for the bounded file workflow | A new task identified the public package, read its Governor, Writing for Agents, and Chat Management instructions, proposed a scoped plan, then created only `AGENTS.md` after approval. The 236-word English file covered every brief boundary; the input hash and folder inventory were checked independently. |
+| Missing optional helper in that native task | Passed for one sample | The named example helper was absent from the current catalog. The task used decimal arithmetic and a cents check to return `12.35`, with no install or account access; both demo files stayed byte-identical. |
+| Actual Desktop picker and visible skill list | Not observed | Computer Use refused access to the Codex app for safety reasons. The native task tool supplied a text invocation; no UI control bypass was attempted. No screenshot or picker-selection evidence was captured. |
+| Model behavior in an independent user profile | Not performed | The authenticated task used the author's existing profile and read host memory and plugin registration. It is separate from the isolated CLI installation/discovery checks. |
 | Native card rendering and answer handling | Not performed for this candidate | Host-dependent behavior; a tool acknowledgement is not a submitted answer or proof of rendering. |
 
 ## Earlier development evidence
@@ -39,8 +42,12 @@ The test used a temporary Codex state directory, an empty project, no supplied c
 
 The app-server confirmed the temporary state root, returned the four public plugin skills plus Codex's built-in system skills, and reported no authenticated account. The original configuration and marketplace file were checked for preservation. The personal plugin was updated independently during this work; the test did not write to it. This verifies installation without relying on the author's personal plugins or account connectors, on the same machine and Codex binary. It is not a separate computer, account-based model run, or security assessment of Codex isolation.
 
-## Release acceptance still required
+## Native task test and remaining acceptance
 
-The remaining acceptance is a real authenticated task using [installation](INSTALL.md) and [the offline demo](../examples/OFFLINE-DEMO.md). Confirm the marketplace and plugin version, four visible skills, actual Desktop `@` selection, bundled helper use, artifact checks, and missing-capability handling. Prefer a separate user environment; if the existing Desktop profile is used, record that limitation and the actual skills/tools used.
+After explicit approval, the public package was installed alongside the personal plugin. Both identities remained enabled, all 19 public files matched the release, and the 16 personal source/cache files stayed unchanged. The new task was created through Codex's native task tool. Its recorded file reads identify the installed public package, but it also read the existing host memory registry and plugin configuration. This is a real authenticated task on the author's profile, not an independent-profile behavior test or observed picker interaction.
 
-Until that run is recorded, describe this as a public preview with verified isolated CLI installation and skill discovery. Do not claim a completed Desktop workflow, general reliability, support for every host, or time savings.
+The file workflow used [the offline demo](../examples/OFFLINE-DEMO.md): inspect the synthetic brief, propose the one-file plan, receive approval, create `AGENTS.md`, and check scope and input preservation. It recovered from an attempted Git status check in a folder without a repository by using a file inventory and hashes. No sorter was implemented. The optional-helper check then left both files unchanged.
+
+The remaining UI check is to follow [installation](INSTALL.md), visibly select Work Governor from the public marketplace in the Desktop `@` picker, and verify the displayed skills and ensuing task. A separate user's authenticated run is also still needed for independent-profile behavioral evidence. Native-card rendering, screenshots, and video have not been verified or captured.
+
+Describe the release as a public preview with verified isolated CLI installation/discovery and a bounded native-task file workflow on the author's profile. Do not claim complete Desktop UI acceptance, general reliability, support for every host, or time savings.
