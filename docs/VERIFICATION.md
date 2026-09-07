@@ -2,7 +2,7 @@
 
 Date: 7 September 2026. Package: `work-governor` version `0.1.0`. Marketplace: `skiriks-work-governor`.
 
-This is a local release candidate. It has not yet been published or installed from a public repository in an independent Codex environment.
+This is a public preview at [skiriks/work-governor](https://github.com/skiriks/work-governor). Repository publication and anonymous package download were verified. Installation in an independent Codex environment remains unperformed.
 
 ## Current candidate checks
 
@@ -12,7 +12,8 @@ This is a local release candidate. It has not yet been published or installed fr
 | Copied-package instruction consumer | Draft check passed; file workflow blocked | A controlled consumer read the copied Governor, bundled agent-writing skill and its reference, and the synthetic brief. It returned concise instructions preserving the brief's boundaries. Host approval review rejected creation of the demo file as outside the explicitly recognized publication scope. No file was created; the read-only draft was checked instead. |
 | Missing-capability responses | Passed in two controlled samples | With the declared optional helper absent, the consumer used a direct method and checked `12.35`. With essential private-sheet access absent, it gave no invented row count and requested readable data. No installation or account access occurred. |
 | Official authoring validators | Not run successfully | The local Python environments lack PyYAML; an older cached adapter is also unavailable. No dependency was installed. The official validators remain a separate uncompleted check. |
-| Public remote installation | Not performed | Repository publication requires author approval first. |
+| Public repository and anonymous download | Passed | The public GitHub repository was created with fresh history after author approval. An unauthenticated HTTP download of initial commit `ddfe44c07ba92e603ca37d123ee40ace41106826` contained exactly the 27 approved files, all byte-identical to the reviewed package. Publication-status documentation was then updated. |
+| Public remote installation | Not performed | Anonymous download does not establish that Codex installed and discovered the plugin in an independent environment. |
 | Fresh Desktop discovery and `@` invocation | Not performed | No independent Desktop profile or second machine was used. |
 | Native card rendering and answer handling | Not performed for this candidate | Host-dependent behavior; a tool acknowledgement is not a submitted answer or proof of rendering. |
 
@@ -30,4 +31,4 @@ The current controlled consumers received a copied package and a declared four-s
 
 Use [installation](INSTALL.md) and [the offline demo](../examples/OFFLINE-DEMO.md) on a separate Codex environment without the author's configuration, account connectors, installed skill collection, or task history. Confirm the source marketplace, plugin version, four visible skills, actual `@` selection, bundled helper use, artifact checks, and missing-capability handling.
 
-Until that run is recorded, describe this as a locally checked candidate with a documented installation path. Do not claim a verified public install, general reliability, support for every host, or time savings.
+Until that run is recorded, describe this as a public preview with local package checks and a documented installation path. Do not claim a verified public install, general reliability, support for every host, or time savings.

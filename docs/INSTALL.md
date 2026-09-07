@@ -12,7 +12,7 @@ Authoring command support was inspected in Codex CLI 0.146.0 and the bundled 0.1
 
 ## Public repository route
 
-**Pending publication and remote installation verification.** The following is the planned route for `skiriks/work-governor`; it cannot succeed until that repository is public and contains this reviewed package.
+**Public preview; independent installation verification is still pending.** The repository `skiriks/work-governor` is public, and anonymous download of the reviewed package was verified on 7 September 2026. Use the following marketplace route in a Codex version that supports it.
 
 ```bash
 codex plugin marketplace add skiriks/work-governor
@@ -32,9 +32,9 @@ codex plugin list
 
 Use either the supported desktop install flow or the CLI flow available in your version. Verify the result rather than assuming command delivery means success.
 
-## Local candidate route
+## Local checkout route
 
-If you have the complete repository folder before publication, open a terminal in its root:
+If you already have the complete repository folder, open a terminal in its root:
 
 ```bash
 python3 scripts/check_package.py
