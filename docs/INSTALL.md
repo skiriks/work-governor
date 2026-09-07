@@ -44,6 +44,8 @@ codex plugin list
 
 This update path was tested from 0.1.0 to 0.1.1. Start a new Codex task after updating; the existing task may retain earlier instructions.
 
+For the icon release, a fresh 0.1.2 installation passed in isolated CLI state. An update from 0.1.1 to 0.1.2 also passed on the author's existing Desktop profile: all 20 installed files matched the public package, and the personal plugin was preserved. Codex resolved the icon metadata in the isolated check; visible icon rendering in the Desktop UI remains unconfirmed.
+
 ## Local checkout route
 
 If you already have the complete repository folder, open a terminal in its root:
