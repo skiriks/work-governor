@@ -8,7 +8,7 @@ This is a Codex repository marketplace. It installs one plugin containing four s
 - The `codex` command available in your terminal. Git-backed marketplace setup also needs Git and access to GitHub.
 - Permission to add plugins in your environment. Organization policies can restrict available sources.
 
-The GitHub marketplace and plugin installation commands below were successfully executed with Codex CLI 0.153.4 on macOS on 7 September 2026, using separate state with access to the author's personal configuration and plugins denied. All four skills from version 0.1.0 were then discovered by a fresh app-server. The 0.1.1 update check is pending. CLI 0.146.0 was inspected for command support only. This is not a minimum-version claim or a Desktop behavior test. Check your installed client's `codex plugin --help` if a command is unavailable; do not edit personal configuration manually to work around unsupported features.
+The GitHub marketplace and plugin installation commands below were successfully executed with Codex CLI 0.153.4 on macOS on 7 September 2026, using separate state with access to the author's personal configuration and plugins denied. A fresh installation of 0.1.1 and an update from 0.1.0 both passed. A fresh app-server discovered all four skills from 0.1.1 without errors. CLI 0.146.0 was inspected for command support only. This is not a minimum-version claim or a Desktop behavior test. Check your installed client's `codex plugin --help` if a command is unavailable; do not edit personal configuration manually to work around unsupported features.
 
 ## Public repository route
 
@@ -31,6 +31,18 @@ codex plugin list
 ```
 
 Use either the supported desktop install flow or the CLI flow available in your version. Verify the result rather than assuming command delivery means success.
+
+## Update an existing public installation
+
+Refresh only this marketplace, then reinstall the plugin from its updated snapshot:
+
+```bash
+codex plugin marketplace upgrade skiriks-work-governor
+codex plugin add work-governor@skiriks-work-governor
+codex plugin list
+```
+
+This update path was tested from 0.1.0 to 0.1.1. Start a new Codex task after updating; the existing task may retain earlier instructions.
 
 ## Local checkout route
 
