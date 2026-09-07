@@ -1,0 +1,7 @@
+interface:
+  display_name: "Chat Management"
+  short_description: "Split tasks and prepare reliable handoffs"
+  default_prompt: "Use $chat-management to assess task splitting and prepare the necessary handoff."
+
+policy:
+  allow_implicit_invocation: true

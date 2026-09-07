@@ -1,0 +1,31 @@
+{
+  "name": "work-governor",
+  "version": "0.1.0",
+  "description": "An instruction-based Codex workflow for clarifying tasks, selecting available skills, and checking results.",
+  "author": {
+    "name": "Kyrylo"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Work Governor",
+    "shortDescription": "Clarify tasks, choose skills, and check results.",
+    "longDescription": "Select @Work Governor and describe your desired result. Codex follows the bundled instructions to clarify material questions, agree on a plan, use suitable available skills, continue authorized work, and report verification. Includes Work Governor, Research, Writing for Agents, and Chat Management. External skills and tools are optional and are not bundled. Host capabilities and permissions determine what can run.",
+    "developerName": "Kyrylo",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use Work Governor to clarify my task, agree on a small plan, and complete the authorized work with checks.",
+      "Use Work Governor to explore this idea only. Do not implement it or change files.",
+      "Use Work Governor to continue this approved plan, choose the relevant available skills, and verify the result."
+    ]
+  },
+  "repository": "https://github.com/skiriks/work-governor",
+  "homepage": "https://github.com/skiriks/work-governor",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "skills",
+    "workflow",
+    "agent-instructions"
+  ]
+}

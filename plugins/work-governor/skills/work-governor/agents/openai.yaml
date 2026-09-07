@@ -1,0 +1,7 @@
+interface:
+  display_name: "Work Governor"
+  short_description: "Choose relevant skills and guide a task to completion"
+  default_prompt: "Use $work-governor to select relevant skills, agree on a plan, and complete the authorized work with checks."
+
+policy:
+  allow_implicit_invocation: true
