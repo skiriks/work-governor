@@ -12,7 +12,7 @@ The GitHub marketplace and plugin installation commands below were successfully 
 
 ## Public repository route
 
-**Public preview; isolated CLI installation passed.** The repository `skiriks/work-governor` is public. Anonymous download, installation, and skill discovery were verified on 7 September 2026. A fresh native task on the author's Desktop profile completed the demo file workflow; actual Desktop picker selection and independent-profile behavior remain unverified. Use the following marketplace route in a Codex version that supports it.
+**Public preview; isolated CLI installation passed.** The repository `skiriks/work-governor` is public. Anonymous download, installation, and skill discovery were verified on 7 September 2026. A fresh native task on the author's Desktop profile completed the demo file workflow; public-plugin invocation, native-card rendering, and answer handling were also checked in that profile. Independent-profile behavior remains unverified. Use the following marketplace route in a Codex version that supports it.
 
 ```bash
 codex plugin marketplace add skiriks/work-governor

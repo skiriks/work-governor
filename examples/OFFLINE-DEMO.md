@@ -26,6 +26,16 @@ Use synthetic input in a fresh folder and a new Codex task. No external skill, c
 
 Record host/version, date, package version, marketplace, and outcomes. A successful sample is evidence of that run, not a reliability percentage.
 
+## Clarification demo (planning only)
+
+To demonstrate meaningful questions, select the public Work Governor and start a new planning-only scenario:
+
+> Use Work Governor for a new planning-only demo: help me scope a local tool for organizing ad creative files. I have not decided whether to group files by campaign, creative concept, or testing status, or how I should review proposed changes. Clarify these decisions with me, then propose a minimal plan. Use only the plugin's bundled guidance. Do not reuse decisions from the previous demo, access accounts, or create/change files.
+
+Choose the options yourself. Recommendations and preselection are not submitted answers. In the recorded author-profile sample, Codex asked three questions, then one dependent question about assigning concepts. The final plan retained creative-concept grouping, manual labels, checklist review, and approved copies. Different choices can lead to different follow-up questions; four is not a required question count.
+
+Check that the final plan reflects your actual answers and that no implementation or file changes occurred. Native cards are supplied by Codex. A settled arithmetic task should not need a clarification card.
+
 ## Missing optional skill
 
 In another fresh task, select the same plugin and send:
