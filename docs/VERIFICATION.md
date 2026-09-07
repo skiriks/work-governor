@@ -1,6 +1,8 @@
 # Verification record
 
-Date: 7 September 2026. Package: `work-governor` version `0.1.1`. Marketplace: `skiriks-work-governor`.
+Date: 7 September 2026. Current package: `work-governor` version `0.1.2`. Marketplace: `skiriks-work-governor`.
+
+Version 0.1.2 adds a bundled PNG icon and its Codex presentation metadata, plus the same image in the GitHub README. All 15 skill instruction, metadata, and reference files are byte-identical to 0.1.1. The behavioral results below remain explicitly attributed to their tested versions; the icon update is not a new behavior test. Fresh installation and visible Codex icon rendering for 0.1.2 are pending.
 
 This is a public preview at [skiriks/work-governor](https://github.com/skiriks/work-governor). Publication, anonymous download, installation into isolated Codex CLI state, and discovery of the four installed skills were verified. A fresh native Codex task on the author's existing Desktop profile completed the bounded file workflow and a missing-helper check. A subsequent user-submitted public-plugin invocation showed a native question card and produced a plan preserving the submitted answers.
 
@@ -10,7 +12,7 @@ Version 0.1.1 carries the current personal-source changes to completion checks, 
 
 | Layer | Status | Evidence and limit |
 | --- | --- | --- |
-| Selected package and links | Passed | The focused package checker passed: 27 selected files, 16 runtime files, four skills, 23 local links. Eight YAML documents also parsed with Ruby Psych. These checks do not substitute for the official schema validator. |
+| Selected package and links (0.1.1) | Passed | The focused package checker passed: 27 selected files, 16 runtime files, four skills, 23 local links. Eight YAML documents also parsed with Ruby Psych. These checks do not substitute for the official schema validator. |
 | Copied-package instruction consumer (0.1.0) | Draft check passed; file workflow blocked | A controlled consumer read the copied Governor, bundled agent-writing skill and its reference, and the synthetic brief. It returned concise instructions preserving the brief's boundaries. Host approval review rejected creation of the demo file as outside the explicitly recognized publication scope. No file was created; the read-only draft was checked instead. |
 | Missing-capability responses (0.1.0) | Passed in two controlled samples | With the declared optional helper absent, the consumer used a direct method and checked `12.35`. With essential private-sheet access absent, it gave no invented row count and requested readable data. No installation or account access occurred. |
 | Completion and missing-data consumer samples (0.1.1) | Mixed | A read-only consumer independently checked a reported arithmetic result and returned `12.35`. With private-sheet access absent, it gave no invented count and offered access/export routes with a resume step, but omitted the instruction to explicitly recommend one route. These are direct instruction-consumer samples, not installed Desktop runs. |

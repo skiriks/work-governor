@@ -7,13 +7,14 @@ behavioral test. It never installs plugins or changes Codex configuration.
 import hashlib
 import json
 import re
+import struct
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PLUGIN = ROOT / "plugins/work-governor"
 SKILLS = ("work-governor", "research", "writing-for-agents", "chat-management")
-RUNTIME = {".codex-plugin/plugin.json"}
+RUNTIME = {".codex-plugin/plugin.json", "assets/work-governor.png"}
 for skill in SKILLS:
     RUNTIME.update((f"skills/{skill}/SKILL.md", f"skills/{skill}/agents/openai.yaml"))
 for reference in ("domain-modeling", "project-continuity", "prototype", "prototype-logic", "prototype-ui", "questionnaire"):
@@ -51,11 +52,21 @@ for path in ROOT.rglob("*"):
 
 manifest = read_json(PLUGIN / ".codex-plugin/plugin.json")
 check(manifest.get("name") == "work-governor", "Incorrect plugin name")
-check(manifest.get("version") == "0.1.1", "Unexpected release version")
+check(manifest.get("version") == "0.1.2", "Unexpected release version")
 check(manifest.get("skills") == "./skills/", "Incorrect bundled skills path")
 check(manifest.get("license") == "MIT", "Missing project license metadata")
 check(not ({"apps", "mcpServers", "hooks"} & manifest.keys()), "Unexpected runtime dependency")
 check(manifest.get("interface", {}).get("displayName") == "Work Governor", "Incorrect display name")
+for field in ("composerIcon", "logo"):
+    check(manifest.get("interface", {}).get(field) == "./assets/work-governor.png", f"Incorrect icon metadata: {field}")
+icon = PLUGIN / "assets/work-governor.png"
+if icon.is_file():
+    image = icon.read_bytes()
+    check(len(image) >= 24 and image[:8] == b"\x89PNG\r\n\x1a\n", "Icon must be a PNG")
+    if len(image) >= 24:
+        width, height = struct.unpack(">II", image[16:24])
+        check(width == height and width >= 1024, "Icon must be square and at least 1024 pixels")
+check('src="plugins/work-governor/assets/work-governor.png"' in (ROOT / "README.md").read_text(), "README icon path differs from bundled asset")
 check(manifest.get("repository") == "https://github.com/skiriks/work-governor", "Incorrect repository metadata")
 marketplace = read_json(ROOT / ".agents/plugins/marketplace.json")
 check(marketplace.get("name") == "skiriks-work-governor", "Incorrect marketplace identity")

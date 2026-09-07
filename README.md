@@ -1,8 +1,12 @@
 # Work Governor
 
+<img src="plugins/work-governor/assets/work-governor.png" alt="Work Governor hierarchy icon" width="144" height="144">
+
 An instruction-based plugin for Codex. Describe the result you want; Work Governor guides Codex through clarification, a small agreed plan, relevant skill selection, authorized work, and verification.
 
 Created by Kyrylo as a personal project with AI assistance, for use in his own work.
+
+**Current version: 0.1.2.** Adds the plugin icon used in this README and Codex marketplace metadata. The four skills and their supporting instructions are unchanged from 0.1.1. Visual rendering of the icon in Codex has not yet been confirmed.
 
 **Release status:** public preview. Anonymous download, installation from GitHub in isolated Codex CLI state, and discovery of all four bundled skills were verified on 7 September 2026. Both a fresh installation of 0.1.1 and an update from 0.1.0 passed. A fresh native Codex task also created and checked the demo file using the installed public package. A user-submitted public-plugin invocation also produced native question cards and a plan that preserved the submitted choices. Behavior in an independent user profile remains unverified. See [verification](docs/VERIFICATION.md).
 
