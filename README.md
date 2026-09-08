@@ -6,9 +6,9 @@ An instruction-based plugin for Codex. Describe the result you want; Work Govern
 
 Created by Kyrylo as a personal project with AI assistance, for use in his own work.
 
-**Current version: 0.1.2.** Adds the plugin icon used in this README and Codex marketplace metadata. A fresh isolated installation, four-skill discovery, and resolution of both icon metadata paths passed. The four skills and their supporting instructions are unchanged from 0.1.1. The icon renders in GitHub; its visible rendering in Codex has not yet been confirmed.
+**Prepared version: 0.1.3.** Keeps Governor active across follow-ups in the same delegated task without another `@` mention. Each governed prose reply states the current phase/result and ends with a concrete next action and owner. A completed phase explains the transition toward the remaining goal; external actions still require their own authorization. Exact-output requests and explicit opt-outs retain their format and scope. This update is not yet published or installed.
 
-**Release status:** public preview. Anonymous download, installation from GitHub in isolated Codex CLI state, and discovery of all four bundled skills were verified on 7 September 2026. Both a fresh installation of 0.1.1 and an update from 0.1.0 passed. A fresh native Codex task also created and checked the demo file using the installed public package. A user-submitted public-plugin invocation also produced native question cards and a plan that preserved the submitted choices. Behavior in an independent user profile remains unverified. See [verification](docs/VERIFICATION.md).
+**Published release status (0.1.2):** public preview. Anonymous download, installation from GitHub in isolated Codex CLI state, and discovery of all four bundled skills were verified on 7 September 2026. Both a fresh installation of 0.1.1 and an update from 0.1.0 passed. A fresh native Codex task also created and checked the demo file using the installed public package. A user-submitted public-plugin invocation also produced native question cards and a plan that preserved the submitted choices. Behavior in an independent user profile remains unverified. See [verification](docs/VERIFICATION.md).
 
 ## What you install
 

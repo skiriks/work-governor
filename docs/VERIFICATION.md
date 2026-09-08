@@ -1,6 +1,24 @@
 # Verification record
 
-Date: 7 September 2026. Current package: `work-governor` version `0.1.2`. Marketplace: `skiriks-work-governor`.
+## Prepared update 0.1.3 — 8 September 2026
+
+Source preparation only: this update has not been published or installed. The current published and installed public version remains 0.1.2.
+
+The update adds an explicit current-state/next-action contract for every governed prose reply, preserves delegation across follow-ups without another plugin mention, and carries the working phase and reply contract into handoffs. It distinguishes a completed approved phase from the remaining broader goal. Exact-output requests, opt-outs, quoted-content nonactivation and external authorization remain protected. The native-card protocol is unchanged.
+
+Preparation checks:
+
+- Package check passed: 28 selected files, 17 runtime files, four skills and 23 local links. References, license notices and icon are retained; only the manifest and two skill entrypoints change inside the plugin. The native-card protocol is byte-identical to 0.1.2.
+- Plugin and changed-skill validator logic passed using a system Ruby Psych YAML adapter. PyYAML is unavailable, so this is not a native PyYAML run; no dependency was installed.
+- Fourteen controlled scenarios produced mixed responses during revision. Failures exposed an incomplete phase transition, a handoff ending that lacked the source task's action, and an optional preference incorrectly treated as a blocker. Focused reruns after correction supplied the manual acceptance action and resumption, the source-side handoff action, and an explicitly optional card choice.
+- A two-turn local file fixture received plan approval without another plugin mention, created the authorized output, and independently checked count `3`, total `4.00` and input preservation. Separate final-source samples respected planning-only completion, fully completed scope, exact JSON output and explicit opt-out. One completed-scope sample imprecisely attributed preservation to the report instead of the input; the fixture's file check is the evidence for input preservation.
+- Independent source review found no actionable conflict. Configuration, the personal marketplace file and all 20 installed 0.1.2 plugin files remain unchanged.
+
+These are controlled instruction-consumption and local-file checks, not a uniformly passing behavioral suite, new Desktop evidence or a reliability guarantee. Installation and fresh discovery of 0.1.3 remain unperformed until an authorized release/update.
+
+## Published version 0.1.2 — 7 September 2026
+
+Package: `work-governor` version `0.1.2`. Marketplace: `skiriks-work-governor`. The following results are historical evidence for their named tested versions.
 
 Version 0.1.2 adds a bundled PNG icon and its Codex presentation metadata, plus the same image in the GitHub README. All 15 skill instruction, metadata, and reference files are byte-identical to 0.1.1. The behavioral results below remain explicitly attributed to their tested versions; the icon update is not a new behavior test. Fresh isolated installation and discovery passed. Visible Codex icon rendering remains unconfirmed.
 

@@ -52,7 +52,7 @@ for path in ROOT.rglob("*"):
 
 manifest = read_json(PLUGIN / ".codex-plugin/plugin.json")
 check(manifest.get("name") == "work-governor", "Incorrect plugin name")
-check(manifest.get("version") == "0.1.2", "Unexpected release version")
+check(manifest.get("version") == "0.1.3", "Unexpected release version")
 check(manifest.get("skills") == "./skills/", "Incorrect bundled skills path")
 check(manifest.get("license") == "MIT", "Missing project license metadata")
 check(not ({"apps", "mcpServers", "hooks"} & manifest.keys()), "Unexpected runtime dependency")

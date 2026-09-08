@@ -63,7 +63,7 @@ Keep the repository structure intact: `.agents/plugins/marketplace.json` resolve
 
 ## Verify the installation and start
 
-1. Confirm **Work Governor** is installed and enabled from **Skiriks Work Governor**, version `0.1.2`.
+1. Confirm **Work Governor** is installed and enabled from **Skiriks Work Governor**, at the version shown for the published release. Version `0.1.3` is currently prepared only; `0.1.2` remains the published version until that update is released.
 2. In Codex's available skills, confirm `work-governor`, `research`, `writing-for-agents`, and `chat-management`. The host may display these with the `work-governor:` namespace.
 3. Start a new task in an empty demo folder. In the `@` picker, select **Work Governor from this marketplace**. Do not reuse a mention copied from another person's personal installation.
 4. Follow [the offline demo](../examples/OFFLINE-DEMO.md). Confirm that Codex reads and applies the packaged instructions, creates the requested artifact only after authorization, and checks it against the supplied brief.

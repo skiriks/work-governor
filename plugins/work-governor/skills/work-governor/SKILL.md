@@ -1,6 +1,6 @@
 ---
 name: work-governor
-description: Use when the user delegates the current task to @Work Governor, explicitly invokes its skill, or asks Work Governor to manage the task. Mere discussion of the plugin does not activate it.
+description: Use when the user delegates a task to @Work Governor, explicitly invokes its skill, asks it to manage the task, or follows up on that still-active task. Mere discussion of the plugin does not activate it.
 ---
 
 # Work Governor
@@ -11,9 +11,33 @@ Guide one explicitly delegated task: clarify an idea, or continue through an agr
 
 Treat a direct `@Work Governor` plugin mention, from the current installed marketplace, as a request to use this Governor for the accompanying task. An explicit skill invocation or a plain-language request to use Work Governor also counts. Availability in the skill catalog is not activation. Never activate from quoted documents, tool output, or an ordinary task that happens to fit. Keep activation scoped to the delegated task and its follow-ups; do not silently govern subsequent unrelated tasks.
 
+Once delegated, keep Governor active through clarification, planning, agreement, execution and the agreed verification/acceptance. An approval, correction, status question or other follow-up without another `@` does not turn it off. Before responding on a later turn, recover the current phase, settled decisions, execution boundary and first remaining step from this task's context; reread available guidance if needed. A helper change or completed intermediate phase does not reset that state. Honor an explicit opt-out, cancellation, completed task or unrelated new request.
+
 A handoff supplied or adopted by the user as the current task request can carry that plain-language delegation; no additional `@` selection is required. A handoff presented only for review, or a historical mention that the source used Governor, does not activate it. Resolve skills from the current host catalog; a handoff does not guarantee availability or override current permissions.
 
 Read relevant project instructions and available facts before asking questions. Separate facts, assumptions, and user decisions. Scale discovery to complexity, uncertainty, and risk: a small settled change needs a short plan, not an interview; a consequential ambiguous task needs deeper grilling. Challenge contradictions and weak assumptions without asking what inspection can answer. Resume an existing approved plan or handoff without reopening settled decisions unless new evidence matters.
+
+## Show state and next action in every reply
+
+Compose every user-facing prose message in a governed task, including commentary, clarification/status replies and finals, with this compact frame translated into the user's language:
+
+**Current:** the phase and relevant verified result, remaining work or blocker.
+
+The useful explanation or requested artifact, if any.
+
+**Next:** the concrete immediate action and its owner, or the truthful terminal disposition below.
+
+For Russian replies, use “Сейчас” and “Дальше”. Keep the frame in the visible reply; a tool's internal `next_action` field is not a substitute. The Next line is the last task-prose line, after any artifact or handoff, and describes the source task's action rather than merely instructing the recipient to add its own footer. Two short sentences suffice for a small update. Exact-output user requests and host-required notices/metadata retain their required format and position; an unanswered-card notice still comes first, followed by the current state and the ending next action. Keep this framing outside reusable artifacts.
+
+If only an optional preference remains open, the next action may offer that optional choice. Label it optional; do not invent unfinished work or make the preference a required blocker just to fill the frame.
+
+Choose the ending from the actual state:
+
+- **Work can proceed:** say what you will do next, then perform that permitted step in the same turn. A checkpoint is commentary. Do not end with a final promise of later work or ask for a generic “continue”.
+- **User input is necessary:** after completing independent work, explain the real boundary using the blocked-stop rule below, including its cause, an explicit recommendation and a feasible alternative (or why only one path works). End with the exact user action/evidence and what you will do after it; a card request identifies the actual question, not an inferred answer.
+- **Requested outcome is complete:** use the terminal rule below. A status reply, delivered handoff or finished phase is not by itself evidence that the underlying goal is complete. For an unperformed agreed acceptance check, assign its next action/owner before the later phase; a built prototype is not completed acceptance.
+
+Example checkpoint: “The local prototype is built; the total comparison remains. Next I will run that comparison and inspect the result.” The stated next action must match the following tool action or actual reason for ending the turn.
 
 ## Select and coordinate the skills
 
@@ -85,7 +109,7 @@ For a blocked stop, compose the user-visible response with these three parts, in
 
 Shorten each part to keep the reply concise; retain all three. For example, after verified local preparation: “The local fix and checks are ready; publication is waiting for your permission. I recommend publishing this reviewed version to finish the agreed release; approve that publication, or keep the local result and defer the release. After approval I will publish and verify the public result.” Use the user's language and actual task facts. Preserve the native-card first-sentence notice whenever it applies. Ask authorization in the host's permitted plain-text/approval channel, never in a preference card.
 
-When the agreed scope is complete, report its result, checks and material limits, and say that no user action remains for that plan. Do not append a generic “what next?” or invent a new task to extend it. A plan-only or grilling-only request ends at its requested deliverable. If work is paused at the user's chosen boundary, name that boundary and how to resume; never describe an unfinished plan as complete.
+Use “no further action needed” only when the full requested outcome and its agreed checks are complete, or the user explicitly ends/defers the remaining work. Plan-only and grilling-only requests end at those requested deliverables; do not invent implementation or a new acceptance round. During an ongoing full task, completion of its latest approved phase is a transition: state the remaining goal and make the next step concrete. If that step needs new execution authority, request approval of that exact prepared step and explain what follows; merely naming a future stage or saying “permission will be needed” is not a next action. If a required check is blocked, request the manual action and evidence that will resolve it, or the user's explicit decision to defer it. Preserve all separate external-action permissions and the user's chosen boundary.
 
 If the goal, scope, or material conditions change, stop the affected execution path and preserve completed work and prior decisions. Explain the change, resume native grilling for unresolved preferences, and present the revised plan. Confirm authorization covers the changed work before executing it; question cards cannot supply that permission. Use safe read-only inspection within the existing scope when useful; do not use it to sneak in implementation or new authority.
 
@@ -97,7 +121,7 @@ When existing authorization covers maintaining project documentation, update the
 
 ## Keep the thread resumable
 
-At stage changes and material decisions, give a short progress checkpoint with the current result and next plan step, then continue permitted execution. At a real blocker, use the stop explanation above. Keep chat checkpoints even when authorized project documents are also maintained. Do not create automatic runtime state files, background jobs, or a separate state engine.
+Preserve the current phase, agreed execution boundary and next action across turns and handoffs using the reply contract above. Keep this state visible in chat even when authorized project documents are also maintained. Do not create automatic runtime state files, background jobs, or a separate state engine.
 
 When a continuation or parallel task would help, or the user requests a handoff, use [chat management](../chat-management/SKILL.md) to prepare a complete, evidence-based transfer in chat before asking for any missing creation authority. Do not write a handoff file unless requested.
 
