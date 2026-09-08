@@ -44,6 +44,8 @@ codex plugin list
 
 This update path was tested from 0.1.0 to 0.1.1. Start a new Codex task after updating; the existing task may retain earlier instructions.
 
+On 8 September 2026, the same route updated the author's sole public Work Governor installation from 0.1.2 to 0.1.3. All 20 installed files matched the published plugin, and a fresh Codex process discovered four enabled skills without errors. This verifies the update and discovery, not new Desktop model behavior.
+
 For the icon release, a fresh 0.1.2 installation passed in isolated CLI state. An update from 0.1.1 to 0.1.2 also passed on the author's existing Desktop profile: all 20 installed files matched the public package, and the personal plugin was preserved. Codex resolved the icon metadata in the isolated check; visible icon rendering in the Desktop UI remains unconfirmed.
 
 ## Local checkout route
@@ -63,7 +65,7 @@ Keep the repository structure intact: `.agents/plugins/marketplace.json` resolve
 
 ## Verify the installation and start
 
-1. Confirm **Work Governor** is installed and enabled from **Skiriks Work Governor**, at the version shown for the published release. Version `0.1.3` is currently prepared only; `0.1.2` remains the published version until that update is released.
+1. Confirm **Work Governor** is installed and enabled from **Skiriks Work Governor**, at the published version `0.1.3`.
 2. In Codex's available skills, confirm `work-governor`, `research`, `writing-for-agents`, and `chat-management`. The host may display these with the `work-governor:` namespace.
 3. Start a new task in an empty demo folder. In the `@` picker, select **Work Governor from this marketplace**. Do not reuse a mention copied from another person's personal installation.
 4. Follow [the offline demo](../examples/OFFLINE-DEMO.md). Confirm that Codex reads and applies the packaged instructions, creates the requested artifact only after authorization, and checks it against the supplied brief.

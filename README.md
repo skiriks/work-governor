@@ -6,9 +6,9 @@ An instruction-based plugin for Codex. Describe the result you want; Work Govern
 
 Created by Kyrylo as a personal project with AI assistance, for use in his own work.
 
-**Prepared version: 0.1.3.** Keeps Governor active across follow-ups in the same delegated task without another `@` mention. Each governed prose reply states the current phase/result and ends with a concrete next action and owner. A completed phase explains the transition toward the remaining goal; external actions still require their own authorization. Exact-output requests and explicit opt-outs retain their format and scope. This update is not yet published or installed.
+**Version: 0.1.3.** Keeps Governor active across follow-ups in the same delegated task without another `@` mention. Each governed prose reply states the current phase/result and ends with a concrete next action and owner. A completed phase explains the transition toward the remaining goal; external actions still require their own authorization. Exact-output requests and explicit opt-outs retain their format and scope.
 
-**Published release status (0.1.2):** public preview. Anonymous download, installation from GitHub in isolated Codex CLI state, and discovery of all four bundled skills were verified on 7 September 2026. Both a fresh installation of 0.1.1 and an update from 0.1.0 passed. A fresh native Codex task also created and checked the demo file using the installed public package. A user-submitted public-plugin invocation also produced native question cards and a plan that preserved the submitted choices. Behavior in an independent user profile remains unverified. See [verification](docs/VERIFICATION.md).
+**Release status:** public preview. On 8 September 2026, anonymous download of 0.1.3 matched all 28 public files; the author's existing installation updated from 0.1.2 with all 20 plugin files matching, and a fresh Codex process discovered the four enabled skills without errors. Earlier releases also passed isolated CLI installation and bounded native-task/card checks. Those historical tests are not new Desktop behavior evidence for 0.1.3; behavior in an independent user profile remains unverified. See [verification](docs/VERIFICATION.md).
 
 ## What you install
 

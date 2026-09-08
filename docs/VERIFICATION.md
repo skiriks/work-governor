@@ -1,8 +1,8 @@
 # Verification record
 
-## Prepared update 0.1.3 — 8 September 2026
+## Published update 0.1.3 — 8 September 2026
 
-Source preparation only: this update has not been published or installed. The current published and installed public version remains 0.1.2.
+Version 0.1.3 is published through the GitHub marketplace and installed on the author's existing profile. The runtime change was published in commit `b04db64f0156c59845871ddeb2797a6493f6e7e9`; the subsequent release-status documentation does not change plugin bytes.
 
 The update adds an explicit current-state/next-action contract for every governed prose reply, preserves delegation across follow-ups without another plugin mention, and carries the working phase and reply contract into handoffs. It distinguishes a completed approved phase from the remaining broader goal. Exact-output requests, opt-outs, quoted-content nonactivation and external authorization remain protected. The native-card protocol is unchanged.
 
@@ -12,9 +12,16 @@ Preparation checks:
 - Plugin and changed-skill validator logic passed using a system Ruby Psych YAML adapter. PyYAML is unavailable, so this is not a native PyYAML run; no dependency was installed.
 - Fourteen controlled scenarios produced mixed responses during revision. Failures exposed an incomplete phase transition, a handoff ending that lacked the source task's action, and an optional preference incorrectly treated as a blocker. Focused reruns after correction supplied the manual acceptance action and resumption, the source-side handoff action, and an explicitly optional card choice.
 - A two-turn local file fixture received plan approval without another plugin mention, created the authorized output, and independently checked count `3`, total `4.00` and input preservation. Separate final-source samples respected planning-only completion, fully completed scope, exact JSON output and explicit opt-out. One completed-scope sample imprecisely attributed preservation to the report instead of the input; the fixture's file check is the evidence for input preservation.
-- Independent source review found no actionable conflict. Configuration, the personal marketplace file and all 20 installed 0.1.2 plugin files remain unchanged.
+- Independent source review found no actionable conflict. During source preparation, configuration, the personal marketplace file and all 20 installed 0.1.2 plugin files remained unchanged.
 
-These are controlled instruction-consumption and local-file checks, not a uniformly passing behavioral suite, new Desktop evidence or a reliability guarantee. Installation and fresh discovery of 0.1.3 remain unperformed until an authorized release/update.
+These are controlled instruction-consumption and local-file checks, not a uniformly passing behavioral suite, new Desktop evidence or a reliability guarantee.
+
+After author approval, publication and update checks passed:
+
+- Public GitHub main matched the release commit. An anonymous download contained exactly 28 tracked files, all byte-identical to the reviewed checkout, and its package checker passed.
+- Refreshing only `skiriks-work-governor` and reinstalling `work-governor@skiriks-work-governor` updated the existing 0.1.2 installation to 0.1.3. Exactly one Work Governor remained installed and enabled, and all 20 installed files matched the published plugin.
+- A fresh Codex app-server discovered all four enabled namespaced skills from the 0.1.3 cache with no discovery errors. No model turn or Desktop UI observation was performed in this check.
+- Configuration and 41 preserved personal-source/cache/marketplace files stayed unchanged. The installer removed the superseded 20-file public 0.1.2 cache as part of the update.
 
 ## Published version 0.1.2 — 7 September 2026
 
